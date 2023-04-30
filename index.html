@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+        <title>Feedback Form</title>
+    </head>
+    <body>
+        <main>
+            <h1 id="title">Send us your feedback!</h1>
+            <p id="description">We would like to improve more and more, but we need your input to make this happen, please answer the following questions. Thanks in advance!</p>
+            <form action="" id="survey-form">
+                <fieldset>
+                    <label for="name" id="name-label"><p>Name</p> <input type="text" id="name" class="wide" placeholder="Enter your name" required /></label>
+                    <label for="email" id="email-label"><p>Email</p> <input type="email" id="email" class="wide" placeholder="Enter your Email" required /></label>
+                    <label for="number" id="number-label"><p>Age <em>(optional)</em></p> <input type="number" id="number" class="wide" min="10" max="99" placeholder="Age"></label>
+                    <label for="dropdown"> 
+                        <p>How long have you used this product?</p>
+                        <select name="dropdown" id="dropdown" class="wide">
+                            <option value="*" disabled selected>Please select</option>
+                            <option value="1">Less than 1 Month</option>
+                            <option value="2">1 - 2 Months</option>
+                            <option value="3">3 - 6 Months</option>
+                            <option value="4">6 - 12 Months</option>
+                            <option value="5">1 Year +</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <fieldset class="radio">
+                    <p>How was your experiance?</p>
+                    <label for="not-good" class="inline"><input type="radio" id="not-good" name="experience" value="1" required>Not good</label>
+                    <label for="ok" class="inline"><input type="radio" id="ok" name="experience" value="2" required>Ok</label>
+                    <label for="good" class="inline"><input type="radio" id="good" name="experience" value="3" required>Good</label>
+                    <label for="brilliant" class="inline"><input type="radio" id="brilliant" name="experience" value="4" required>Brilliant</label>
+                </fieldset>
+                <fieldset class="checkbox">
+                    <p>What's driving your review?</p>
+                    <label for="bug" class="inline"><input type="checkbox" id="bug" value="1">Bug</label>
+                    <label for="design" class="inline"><input type="checkbox" id="design" value="2">Design</label>
+                    <label for="usability" class="inline"><input type="checkbox" id="usability" value="3">Usability</label>
+                    <label for="support" class="inline"><input type="checkbox" id="support" value="4">Support</label>
+                    <label for="suggestion" class="inline"><input type="checkbox" id="suggestion" value="5">Suggestion</label>
+                    <label for="others" class="inline"><input type="checkbox" id="others" value="6">Others</label>
+                </fieldset>
+                <fieldset>
+                    <label for="opinion"><p>How was your experience? <em>(optional)</em></p> <textarea name="" id="opinion" class="wide" cols="30" rows="10" placeholder="Describe your experience here"></textarea></label>
+                </fieldset>
+                <input type="submit" id="submit" class="wide" value="Submit">
+            </form>
+        </main>
+    </body>
+</html>

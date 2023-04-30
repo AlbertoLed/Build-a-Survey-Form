@@ -1,0 +1,99 @@
+/*
+verde claro
+#c0e5dd
+#e5f4f2
+#c9f2e7
+
+verde saturado
+#00dcaf
+#04d99d
+
+cafe
+#38342c
+#260303
+
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #d5ede9;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+main {
+    max-width: 600px;
+    width: 65%;
+    margin: 80px auto;
+    background-color: #ffffff;
+    color: #260303;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 3px 7px 30px 5px rgba(0, 0, 0, .3);
+}
+#title, #description {
+    text-align: center;
+}
+#submit {
+    background-color: #260303;
+    font-weight: 400;
+    padding: 13px 0;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 3px 5px 13px 1px rgba(0, 0, 0, .13);
+    color: #ffffff;
+}
+#submit:hover {
+    color: #00dcaf;
+    cursor: pointer;
+}
+fieldset {
+    border: none;
+}
+label {
+    margin: 10px 0;
+    display: block;
+}
+.wide {
+    width: 100%;
+    min-height: 1.8em;
+    font-size: .9em;
+    padding: 0 8px;
+    box-sizing: border-box;
+}
+textarea {
+    font-size: 9em;
+}
+#opinion {
+    height: 120px;;
+}
+#description {
+    font-size: 1.1rem;
+    font-weight: 100;
+}
+#title {
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+#dropdown{
+    background-color: #ffffff;
+    padding: auto 8px;
+    cursor: pointer;
+}
+p {
+    margin-bottom: 10px;
+}
+.inline input{
+    margin-right: 8px;
+}
+.radio {
+    margin: 20px 0;
+}
+.checkbox {
+    margin-bottom: 10px;
+}
+em {
+    font-weight: 100;
+    font-style: normal;
+}
